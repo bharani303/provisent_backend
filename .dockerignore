@@ -1,0 +1,12 @@
+.git
+.idea
+target/
+.mvn/
+mvnw
+mvnw.cmd
+*.txt
+*.md
+.gitignore
+.gitattributes
+Dockerfile
+.dockerignore
