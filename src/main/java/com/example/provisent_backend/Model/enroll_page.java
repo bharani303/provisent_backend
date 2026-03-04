@@ -9,6 +9,9 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "pop_menu")
@@ -36,4 +39,7 @@ public class enroll_page {
     private String courseName;
 
     private String modeOfStudy;
+
+    @CreationTimestamp
+    private LocalDateTime createdDate;
 }

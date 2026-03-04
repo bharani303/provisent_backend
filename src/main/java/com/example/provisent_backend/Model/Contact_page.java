@@ -11,6 +11,9 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "enroll_page")
@@ -30,4 +33,9 @@ public class Contact_page {
     private String subjectFocus;
 
     private String message;
+    
+    @CreationTimestamp
+    private LocalDateTime createdDate;
+
+
 }

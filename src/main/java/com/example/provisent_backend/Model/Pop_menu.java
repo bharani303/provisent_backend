@@ -10,6 +10,9 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "contact_page")
@@ -30,4 +33,7 @@ public class Pop_menu {
 
     private String highestQualification;
 
+
+    @CreationTimestamp
+    private LocalDateTime createdDate;
 }
